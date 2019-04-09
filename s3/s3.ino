@@ -23,45 +23,15 @@ void setup() {
   pinMode(BMC_PIN, OUTPUT);
   pinMode(COMM_PIN, INPUT_PULLUP);
 
+  //1
+  singleStimulation(1, 20, 0.5, 2000);
+  
+
+
 }
 
 void loop() {
-  delay(5000);
-  //1
-  singleStimulation(1, 20, 0.5, 5000);
-  //2
-  singleStimulation(1, 20, 0.5, 5000);
-  //3
-  singleStimulation(1, 20, 0.2, 5000);
-  //4
-  singleStimulation(1, 20, 0.2, 5000);
-  while(bmc_state == 0){
-    bmc_state = digitalRead(COMM_PIN);
-  }
-  
-  delay(100000);
-  //5 i 6
-  //delay(55000);
-  //7
-  //jointStimulation(0.5, 40, 0.5, 10000);
-  //8
-  //jointStimulation(0.5, 40, 0.2, 30000);
-  //9
-  //singleStimulation(10, 5, 5, 10000);
-  //10
-  //singleStimulation(10, 5, 5, 10000);
-  //11
-  //singleStimulation(10, 5, 2, 10000);
-  //12
-  //singleStimulation(10, 5, 2, 10000);
-  //13
-  //singleStimulation(20, 5, 10, 10000);
-  //14
-  //singleStimulation(20, 5, 10, 10000);
-  //15
-  //singleStimulation(20, 5, 4, 10000);
-  //16
-  //singleStimulation(20, 5, 4, 0);
+  //
 }
 
 

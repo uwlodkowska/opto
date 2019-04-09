@@ -23,10 +23,7 @@ void setup() {
   pinMode(BMC_PIN, OUTPUT);
   pinMode(COMM_PIN, INPUT_PULLUP);
 
-}
-
-void loop() {
-  delay(5000);
+  delay(20000);
   //1
   singleStimulation(1, 20, 0.5, 5000);
   //2
@@ -35,11 +32,12 @@ void loop() {
   singleStimulation(1, 20, 0.2, 5000);
   //4
   singleStimulation(1, 20, 0.2, 5000);
-  while(bmc_state == 0){
-    bmc_state = digitalRead(COMM_PIN);
-  }
   
-  delay(100000);
+
+
+}
+
+void loop() {
   //5 i 6
   //delay(55000);
   //7
